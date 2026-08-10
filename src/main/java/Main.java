@@ -32,7 +32,7 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("exit");
+                    mainIsRunning = false;
                     break;
                 default:
                     System.out.println("Invalid choice you've choose please try again!");
