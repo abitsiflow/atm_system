@@ -51,7 +51,11 @@ public class Function {
 
         for(int transac : transactionHistory){
             showHistory.add(String.valueOf(transactionHistory));
-            System.out.println(showHistory);
+            if(showHistory.isEmpty()){
+                System.out.println("No transaction history has been recorded");
+            }else{
+                System.out.println(showHistory);
+            }
         }
     }
 }
