@@ -46,11 +46,12 @@ public class Function {
         }
     }
 
-    void history(Scanner scan){
+    void history(){
+        ArrayList<String> showHistory = new ArrayList<>();
 
-        String showHistoryDetails = transactionHistory.parse
-        for(String transac :  ){
-
+        for(int transac : transactionHistory){
+            showHistory.add(String.valueOf(transactionHistory));
+            System.out.println(showHistory);
         }
     }
 }

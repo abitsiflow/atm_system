@@ -33,7 +33,7 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("");
+                    func.history();
                     break;
 
                 case 5:
