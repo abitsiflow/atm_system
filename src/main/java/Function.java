@@ -1,7 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
+
 public class Function {
+
+    ArrayList<Integer> transactionHistory = new ArrayList<>();
 
     private double balance = 0;
 
@@ -19,6 +22,7 @@ public class Function {
         }else{
             System.out.println("Deposited succesfully!");
             balance += amount;
+            transactionHistory.add(amount);
             return amount;
         }
 
@@ -37,7 +41,16 @@ public class Function {
         }else {
             System.out.println("Withdraw succefully!");
             balance -= amount;
+            transactionHistory.add(amount);
             return amount;
+        }
+    }
+
+    void history(Scanner scan){
+
+        String showHistoryDetails = transactionHistory.parse
+        for(String transac :  ){
+
         }
     }
 }

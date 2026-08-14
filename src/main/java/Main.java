@@ -14,8 +14,9 @@ public class Main {
             System.out.println("1. Deposit");
             System.out.println("2. Withdraw");
             System.out.println("3. Show Balance");
-            System.out.println("4. Exit");
-            System.out.print("Enter Choice(1-4): ");
+            System.out.println("4. Show Transaction History");
+            System.out.println("5. Exit");
+            System.out.print("Enter Choice(1-5): ");
             int choice = scan.nextInt();
 
             switch(choice){
@@ -32,6 +33,10 @@ public class Main {
                     break;
 
                 case 4:
+                    System.out.println("");
+                    break;
+
+                case 5:
                     mainIsRunning = false;
                     break;
                 default:
