@@ -1,12 +1,10 @@
-import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.time.LocalDate;
 
 public class Function {
 
-    LocalDate ld = LocalDate.now();
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+
+    Transaction transaction = new Transaction();
     ArrayList<Integer> transactionHistory = new ArrayList<>();
 
     private double balance = 0;
