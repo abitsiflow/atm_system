@@ -16,6 +16,6 @@ public class Transaction {
     @Override
     public String toString(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-        return date.format(dtf) + " | " + type + " | $" + amount ;
+        return date.format(dtf) + " | " + type + " | $" + amount;
     }
 }

@@ -23,7 +23,7 @@
             }else{
                 System.out.println("Deposited successfully!");
                 balance += amount;
-                new Transaction("deposit", amount);
+                transaction = new Transaction("deposit", amount);
                 transactionHistory.add(transaction);
                 return amount;
             }
@@ -41,17 +41,23 @@
                 System.out.println("insufficient funds");
                 return 0;
             }else {
-                System.out.println("Withdraw succesfully!");
+                System.out.println("Withdraw successfully!");
                 balance -= amount;
-                new Transaction("withdraw", amount);
+                transaction = new Transaction("withdraw", amount);
                 transactionHistory.add(transaction);
                 return amount;
             }
         }
 
         void history(){
-            for(Transaction transaction : transactionHistory){
-                System.out.println(transaction);
+
+            for(Transaction transac : transactionHistory){
+                if(transac == null){
+                    System.out.println("No transaction has been registered");
+                    return;
+                }
+
+                System.out.println(transac);
             }
         }
     }
